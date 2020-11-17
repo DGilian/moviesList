@@ -10,7 +10,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.themoviedb.org/3/movie/550?api_key=549fec9423b36940a428a7f91f7a913f")
+    fetch("https://api.themoviedb.org/3/movie/550?api_key=549fec9423b36940a428a7f91f7a913f&callback=test")
       .then(res => res.json())
       .then(
         (result) => {
@@ -23,7 +23,6 @@ function App() {
         }
       )
   }, [])
-
   return (
     <div className="App">
         <h1>Movies List ({count} selected)</h1>
