@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Card from './component/card'
 
 function App() {
   return (
     <div className="App">
-       hello world
+        <h1>Movies List (2 selected)</h1>
+        <Card />
     </div>
   );
 }
