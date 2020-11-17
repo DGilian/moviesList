@@ -23,14 +23,15 @@ function App() {
         }
       )
   }, [])
+
   return (
     <div className="App">
         <h1>Movies List ({count} selected)</h1>
         <div className="movies-container">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card setCount={setCount} count={count}/>
+          <Card setCount={setCount} count={count}/>
+          <Card setCount={setCount} count={count}/>
+          <Card setCount={setCount} count={count}/>
         </div>
     </div>
   );

@@ -3,6 +3,11 @@
   width: 300px;
 }
 
+.card-container-selected{
+  border: 3px solid green;
+  width: 300px;
+}
+
 .title{
   background-color: #dedede;
   margin: 0;
